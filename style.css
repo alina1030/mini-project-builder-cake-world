@@ -6,6 +6,140 @@
     margin:0;
     padding:0;
 }
-
+body{
+    background-color: blueviolet;
+    
+}
 /* Fill your code*/
 
+.shop{
+    color:white;
+    position: relative;
+    left:680px;
+    font-family: serif;
+    
+}
+.board1{
+    position: relative;
+    left:200px;
+    top:120px;
+    color:white;
+    font-size:small ;
+    width:200px;
+    height: 130px;
+    padding:25px;
+    text-align: center;
+    font-family:'Lucida Sans';
+
+}
+.temp{
+    position:relative;
+    left:210px;
+    top: 300px;
+    width:220px;
+}
+img{
+   position: relative;
+   left:620px;
+   top:36.5px;
+   border-radius:75%;
+   height: 180px;
+   padding-top: 20px;
+   background: black;
+   
+
+}
+.btn-chocolate,.btn-strawberry,.btn-butterscotch,.btn-vanilla,.btn-redvelvet{
+ background-color: blueviolet;
+ border-radius:2px;
+ color:white;
+ font-family: 'Acme';
+ padding:2px;
+ position:relative;
+ top:30px; 
+ height:30px;
+ 
+}
+
+.btn-buy{
+
+ background-color: greenyellow;
+ border-radius:2px;
+ font-family: 'Acme';
+ position: relative;
+ padding:2px;
+ top:30px;
+ height:30px;
+ width:50px;
+}
+
+.options{
+    display:flex;
+    position: relative;
+    top:500px;
+    justify-content: space-evenly;
+    background-color:maroon;
+    padding:8px;
+    height:80px;
+    
+}
+
+.top{
+    background-color: maroon;
+    height:80px;
+}
+
+
+/*CAKE LAYERS*/
+#layer1{
+    width: 245px;
+    position:relative;
+    left:670px;
+    background-color:orangered;
+    height:40px;
+    border-radius:8px;
+    top:365px;
+}
+
+#layer2{
+    width: 200px;
+    left: 690px;
+    position:relative;
+    background:pink;
+    border-radius: 8px;
+    height:40px;
+    top:284px;
+    
+}
+
+#layer3{
+    width: 160px;
+    left: 710px;
+    position:relative;
+    border-radius:8px;
+    height:40px;
+    top:203px;
+    background-color: palegoldenrod;
+}
+
+#layer4{
+    width: 120px;
+    left: 733px;
+    position:relative;
+    border-radius:8px;
+    height:40px;
+    top:122px;
+    background-color:white;
+
+}
+
+#layer5{
+    width: 80px;
+    left: 100px;
+    left: 753px;
+    position:relative;
+    border-radius:8px;
+    height:30px;
+    top:52px;
+    background-color:red;
+}
