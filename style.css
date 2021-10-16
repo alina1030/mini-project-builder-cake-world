@@ -5,141 +5,164 @@
 *{
     margin:0;
     padding:0;
-}
-body{
-    background-color: blueviolet;
-    
-}
-/* Fill your code*/
-
-.shop{
-    color:white;
-    position: relative;
-    left:680px;
-    font-family: serif;
-    
-}
-.board1{
-    position: relative;
-    left:200px;
-    top:120px;
-    color:white;
-    font-size:small ;
-    width:200px;
-    height: 130px;
-    padding:25px;
-    text-align: center;
-    font-family:'Lucida Sans';
-
-}
-.temp{
-    position:relative;
-    left:210px;
-    top: 300px;
-    width:220px;
-}
-img{
-   position: relative;
-   left:620px;
-   top:36.5px;
-   border-radius:75%;
-   height: 180px;
-   padding-top: 20px;
-   background: black;
+    box-sizing:content-box;
    
-
-}
-.btn-chocolate,.btn-strawberry,.btn-butterscotch,.btn-vanilla,.btn-redvelvet{
- background-color: blueviolet;
- border-radius:2px;
- color:white;
- font-family: 'Acme';
- padding:2px;
- position:relative;
- top:30px; 
- height:30px;
- 
 }
 
-.btn-buy{
-
- background-color: greenyellow;
- border-radius:2px;
- font-family: 'Acme';
- position: relative;
- padding:2px;
- top:30px;
- height:30px;
- width:50px;
+/* Fill your code*/
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-
-.options{
-    display:flex;
+.header{
     position: relative;
-    top:500px;
-    justify-content: space-evenly;
     background-color:maroon;
-    padding:8px;
-    height:80px;
-    
+    height: 90px;
+    width: 100%;
+}
+.hash{
+  display: flex;
+}
+hr {
+  transform: rotate(317deg);
+  position: relative;
+  width: 10%;
+  height: auto;
+  top:50px;
+}
+.cake-world{
+    position: relative;
+    border-radius: 50%;
+    background-color: black;
+    width: 180px;
+    top: 10px;
+    left: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.cake-world h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: -20px;
+    font-size: x-large;
+}
+.first{
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-color:blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.board img{
+    position:absolute;
+    top: 48%;
+    left: 85px;
+    width: 280px;
+    height: 240px;
+    z-index: auto;
 }
 
-.top{
-    background-color: maroon;
-    height:80px;
+.menucontainer{
+    position: absolute;
+    color: white;
+    padding: 2px;
+    top:52%;
+    left: 135px;
 }
 
 
-/*CAKE LAYERS*/
-#layer1{
+.layers{
+    position: absolute;
+    bottom: 30%;
     width: 245px;
-    position:relative;
-    left:670px;
-    background-color:orangered;
-    height:40px;
-    border-radius:8px;
-    top:365px;
+    left: 42%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+  }
+  #candle {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    left: 35%;
+    top: -33%;
+    visibility: hidden;
 }
-
-#layer2{
+  #layer1 {
+    width: 245px;
+    visibility: hidden;
+    border-radius: 25%;
+    align-self: center;
+    padding:20px;
+  }
+  
+  #layer2 {
     width: 200px;
-    left: 690px;
-    position:relative;
-    background:pink;
-    border-radius: 8px;
-    height:40px;
-    top:284px;
-    
-}
-
-#layer3{
+    left: 40px;
+    visibility: hidden;
+    border-radius: 25%;
+    align-self: center;
+    padding: 20px;
+  }
+  
+  #layer3 {
     width: 160px;
-    left: 710px;
-    position:relative;
-    border-radius:8px;
-    height:40px;
-    top:203px;
-    background-color: palegoldenrod;
-}
-
-#layer4{
+    left: 60px;
+    visibility: hidden;
+    border-radius: 25%;
+    align-self: center;
+    padding: 20px;
+  }
+  
+  #layer4 {
     width: 120px;
-    left: 733px;
-    position:relative;
-    border-radius:8px;
-    height:40px;
-    top:122px;
-    background-color:white;
-
-}
-
-#layer5{
+    left: 80px;
+    visibility: hidden;
+    border-radius: 25%;
+    align-self: center;
+    padding: 20px;
+  }
+  
+  #layer5 {
     width: 80px;
     left: 100px;
-    left: 753px;
-    position:relative;
-    border-radius:8px;
-    height:30px;
-    top:52px;
-    background-color:red;
+    visibility: hidden;
+    border-radius: 25%;
+    align-self: center;
+    padding: 20px;
+  }
+    .footer{
+    position: relative;
+    height: 115px;
+    width: auto;
+    background-color: maroon;
+    display: flex;
+    justify-content: space-around;
 }
+
+
+.footer input[type = button]{
+  position: relative;
+  width: auto;
+  height: 35px;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10%;
+  padding: 5px;
+  top: 30px;
+}
+input[type = button]:hover
+{
+    cursor: pointer;
+}
+#Buy:focus{
+    background-color: rgb(55, 233, 55);
+    color: black;
+}
+

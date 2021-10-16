@@ -4,49 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cake World</title>
 </head>
 <body>
+<div class="container">
+<header class = "header">
+    <div class="hash">
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
     
-<div class="top">
     
-    <img src="/assets/cake.png" alt="cakeworld_logo">
-    <p class="shop">CAKE WORLD</p>
-
+    </div>
+    <div class = "cake-world">
+        <img src="assets/cake.png">
+        <h1>Cake World</h1>
+    </div>
+</header>
+<section class ="first">
+<div class = "board">
+    <img src="./assets/list_template.png">
+    <div class = "menucontainer">
+    <p id="price">PRICES</p>
+    <p class="cost">Chocolate ----------- 300</p>
+    <p class="cost">Strawberry ---------- 100</p> 
+    <p class="cost">Butterscotch -------- 200</p>
+    <p class="cost">Vannila -------------- 250</p>
+    <p class="cost">Redvelvet ----------- 350</p>
 </div>
-<img src="assets/list_template.png" class="temp">
-<div class="board1">
-    <p class="board">
-    <!--<img src="assets/list_template.png"class="temp"> -->  
-    PRICES<br><br>    
-    Chocolate........300<br>
-    Strawberry.......100<br>
-    Butterscotch.....200<br>
-    Vanilla.............250<br>
-    RedVelvet.........350<br>
-    </p>
-</div>    
-
-
-
-  <div class="options">  
-    <button class="btn-chocolate" onclick="renderChocolate()"> Chocolate </button>
-    <button class="btn-strawberry" onclick="renderStrawberry()"> Strawberry </button>
-    <button class="btn-butterscotch" onclick="renderButterscotch()"> Butterscotch </button>
-    <button class="btn-vanilla " onclick="renderVanilla()"> Vanilla </button>
-    <button class="btn-redvelvet" onclick="renderRedvelvet()"> RedVelvet </button>   
-    <button class="btn-buy "> BUY </button>
-  </div>  
-
-  <div id="layer1"></div>
-  <div id="layer2"></div>
-  <div id="layer3"></div>
-  <div id="layer4"></div>
-  <div id ="layer5"></div>
-
-
-
-  
+</div>
+<div class = "layers">
+    <img src="./assets/candle.png" id="candle">
+    <div id="layer5"></div>
+    <div id="layer4"></div>
+    <div id="layer3"></div>
+    <div id="layer2"></div>
+    <div id="layer1"></div>
+</div>
+<!--<div class="billing">
+    <img src="./assets/list_template.png">
+    <div class= "billing-container">
+    <p id="bill">BILL</p>
+    <p id="item1"></p>
+    <p id="item2"></p>
+    <p id="item3"></p>
+    <p id="item4"></p>
+    <p id="item5"></p>
+    <p id="total"></p>
+    </div>
+</div>-->
+</section> 
+<div class ="footer">
+    <input type="button" onclick="Chocolate()" value="Chocolate">
+    <input type="button" onclick="Strawberry()" value="Strawberry">
+    <input type="button" onclick="Butterscotch()" value="Butterscotch">
+    <input type="button" onclick="Vannila()" value="Vannila">
+    <input type="button" onclick="Redvelvet()" value="Redvelvet">
+    <input type="button" onclick="Buy()" id="Buy" value="BUY">
+</div>
+</div>
 </body>
-<script src="/script.js"></script>
+<script src="script.js"></script>
 </html>

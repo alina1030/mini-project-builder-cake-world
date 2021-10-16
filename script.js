@@ -1,135 +1,166 @@
-/*Fill your code */
-/*var ingredients={
-    chocolate = 300,
-    strawberry= 100,
-    butterscotch=200,
-    vanilla=250,
-    redvelvet = 350,
-
-}*/
+var layer = 0;
+var layer1 = document.getElementById("layer1")
+var layer2 = document.getElementById("layer2")
+var layer3 = document.getElementById("layer3")
+var layer4 = document.getElementById("layer4")
+var layer5 = document.getElementById("layer5")
 
 
-/*var state = {
-    chocolate: true,
-    strawberry: true,
-    butterscotch: true,
-    vanilla: true,
-    redvelvet: true
-  };
+function Chocolate() {
+    
+    layer++;
 
+    switch (layer) {
+        case 1:
+            layer1.style.visibility = 'visible';
+           layer1.style.background = 'brown';
+            break;
+        case 2:
+            layer2.style.visibility = 'visible';
+           layer2.style.background = 'brown';
+            break;
+        case 3:
+            layer3.style.visibility = 'visible';
+           layer3.style.background = 'brown';
 
-function render() {
-    renderChocolate();
-    renderStrawberry();
-    renderButterscotch();
-    renderVanilla();
-    renderRedvelvet();
-    renderBuy();
-    renderIngredientsBoard();
-    renderPrice();
-  }
+            break;
+        case 4:
+            layer4.style.visibility = 'visible';
+            layer4.style.background = 'brown';
+            break;
+        case 5:
+            layer5.style.visibility = 'visible';
+            layer5.style.background = 'brown';
+            candle.style.visibility = 'visible';
+            break;
 
-
-  function renderChocolate() {
-    let chocolate = document.querySelector("#chocolate");
-    //you can also use getElementById
-    if (state.chocolate) {
-      chocolate.style.display = "inherit";
-    } else {
-      chocolate.style.display = "none";
+        
     }
-  }
+    
 
-  document.querySelector(".btn-chocolate").onclick = function () {
-    state.chocolate = !state.chocolate;
-    render();
-  };
+}
 
-*/
+function Strawberry() {
+   
+    layer++;
+    
+    switch (layer) {
+        case 1:
+            layer1.style.visibility = 'visible';
+            layer1.style.background = 'pink';
+            break;
+        case 2:
+            layer2.style.visibility = 'visible';
+            layer2.style.background = 'pink';
+            break;
+        case 3:
+            layer3.style.visibility = 'visible';
+            layer3.style.background = 'pink';
+            break;
+        case 4:
+            layer4.style.visibility = 'visible';
+            layer4.style.background = 'pink';
+            break;
+        case 5:
+            layer5.style.visibility = 'visible';
+            layer5.style.background = 'pink';
+            candle.style.visibility = 'visible';
+            break;
+     
+    }
+    
+}
+
+function Butterscotch() {
+    
+    layer++;
+    
+    switch (layer) {
+        case 1:
+            layer1.style.visibility = 'visible';
+            layer1.style.background = 'yellow';
+            break;
+        case 2:
+            layer2.style.visibility = 'visible';
+            layer2.style.background = 'yellow';
+            break;
+        case 3:
+            layer3.style.visibility = 'visible';
+            layer3.style.background = 'yellow';
+            break;
+        case 4:
+            layer4.style.visibility = 'visible';
+            layer4.style.background = 'yellow';
+            break;
+        case 5:
+            layer5.style.visibility = 'visible';
+            layer5.style.background = 'yellow';
+            candle.style.visibility = 'visible';
+            break;
+        
+    }
+    
+}
+
+function Vannila() {
   
-let chocolate;
-let strawberry;
-let butterscotch;
-let vanilla;
-let redvelvet;
-
-function render() {
-renderChocolate();
-renderStrawberry();
-renderButterscotch();
-renderVanilla();
-renderRedvelvet();
-renderBuy();
-renderIngredientsBoard();
-renderPrice();
+    layer++;
+    
+    switch (layer) {
+        case 1:
+            layer1.style.visibility = 'visible';
+            layer1.style.background = 'white';
+            break;
+        case 2:
+            layer2.style.visibility = 'visible';
+            layer2.style.background = 'white';
+            break;
+        case 3:
+            layer3.style.visibility = 'visible';
+            layer3.style.background = 'white';
+            break;
+        case 4:
+            layer4.style.visibility = 'visible';
+            layer4.style.background = 'white';
+            break;
+        case 5:
+            layer5.style.visibility = 'visible';
+            layer5.style.background = 'white';
+            candle.style.visibility = 'visible';
+            break;
+      
+    }
+    
 }
 
-function renderChocolate() 
-{
-//let chocolate = document.getElementsByClassName("btn-chocolate");
-//you can also use getElementById
-if (chocolate==1) {
-  document.getElementById("layer1").style.display="inherit";
-        return chocolate=0;
-    } 
-else {
-  document.getElementById("layer1").style.display="none";
-        return chocolate=1;
-   }
+function Redvelvet() {
+    
+    layer++;
+    
+    switch (layer) {
+        case 1:
+            layer1.style.visibility = 'visible';
+            layer1.style.background = 'red';
+            break;
+        case 2:
+            layer2.style.visibility = 'visible';
+            layer2.style.background = 'red';
+            break;
+        case 3:
+            layer3.style.visibility = 'visible';
+            layer3.style.background = 'red';
+            break;
+        case 4:
+            layer4.style.visibility = 'visible';
+            layer4.style.background = 'red';
+            break;
+        case 5:
+            layer5.style.visibility = 'visible';
+            layer5.style.background = 'red';
+            candle.style.visibility = 'visible';
+            break;
+        
+    }
+    
 }
 
-
-function renderStrawberry() 
-{
-//let chocolate = document.getElementsByClassName("btn-chocolate");
-//you can also use getElementById
-if (strawberry==1) {
-  document.getElementById("layer2").style.display="inherit";
-        return strawberry=0;
-    } 
-else {
-  document.getElementById("layer2").style.display="none";
-        return strawberry=1;
-   }
-}
-
-function renderButterscotch() 
-{
-//let chocolate = document.getElementsByClassName("btn-chocolate");
-//you can also use getElementById
-if (butterscotch==1) {
-  document.getElementById("layer3").style.display="inherit";
-        return butterscotch=0;
-    } 
-else {
-  document.getElementById("layer3").style.display="none";
-        return butterscotch=1;
-   }
-}
-
-function renderVanilla() 
-{
-//let chocolate = document.getElementsByClassName("btn-chocolate");
-//you can also use getElementById
-if (vanilla==1) {
-  document.getElementById("layer4").style.display="inherit";
-        return vanilla=0;
-    } 
-else {
-  document.getElementById("layer4").style.display="none";
-        return vanilla=1;
-   }
-}
-function renderRedvelvet() 
-{
-//let chocolate = document.getElementsByClassName("btn-chocolate");
-//you can also use getElementById
-if (redvelvet==1) {
-  document.getElementById("layer5").style.display="inherit";
-        return redvelvet=0;
-    } 
-else {
-  document.getElementById("layer5").style.display="none";
-        return redvelvet=1;
-   }
-}
